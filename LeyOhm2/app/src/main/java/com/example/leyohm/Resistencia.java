@@ -22,7 +22,7 @@ public class Resistencia extends AppCompatActivity {
 
         volta = findViewById(R.id.volt);
         cor = findViewById(R.id.corr);
-        resultado = findViewById(R.id.result);
+        resultado = findViewById(R.id.resul);
         calcular = findViewById(R.id.calcu);
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
