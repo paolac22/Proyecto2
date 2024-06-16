@@ -12,9 +12,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Voltaje extends AppCompatActivity {
+public class Corriente extends AppCompatActivity {
 
-    private EditText c, resis;
+    private EditText vol,r;
     private Button calcular;
     private TextView resultado;
 
@@ -22,20 +22,19 @@ public class Voltaje extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_voltaje);
+        setContentView(R.layout.activity_corriente);
 
-        c = findViewById(R.id.i);
-        resis = findViewById(R.id.r);
-        resultado = findViewById(R.id.resultado);
-        calcular = findViewById(R.id.calc);
-
+        vol = findViewById(R.id.voltaje);
+        r = findViewById(R.id.resistencia);
+        resultado = findViewById(R.id.result);
+        calcular = findViewById(R.id.cal);
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double corriente = Double.parseDouble(c.getText().toString());
-                double resistencia = Double.parseDouble(resis.getText().toString());
-                double voltaje = corriente * resistencia;
-                resultado.setText("El Voltaje es: " + voltaje + " V");
+                double volt = Double.parseDouble(vol.getText().toString());
+                double res = Double.parseDouble(r.getText().toString());
+                double corriente = volt / res;
+                resultado.setText("La Corriente es: " + corriente + " I");
             }
         });
 

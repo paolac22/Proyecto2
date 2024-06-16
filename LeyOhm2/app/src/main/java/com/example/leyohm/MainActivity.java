@@ -9,9 +9,6 @@ import android.widget.RadioGroup;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         corrien = findViewById(R.id.corriente);
         resi = findViewById(R.id.resistencia);
         rg = findViewById(R.id.rg);
-        cal = findViewById(R.id.calcular);
+        cal = findViewById(R.id.calc);
 
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
