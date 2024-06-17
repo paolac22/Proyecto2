@@ -1,19 +1,19 @@
-package com.example.panphoto;
+package com.example.panphoto7;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.Toast;
+import android.widget.TextView;
+import android.text.Editable;
+import android.text.TextWatcher;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup rgCreditOptions;
     private RadioButton rbOneYear, rbTwoYears;
     private CheckBox cbHomeDelivery;
-    private Button btnCalculate;
+    private TextView tvTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         rbOneYear = findViewById(R.id.rbOneYear);
         rbTwoYears = findViewById(R.id.rbTwoYears);
         cbHomeDelivery = findViewById(R.id.cbHomeDelivery);
-        btnCalculate = findViewById(R.id.btnCalculate);
+        tvTotal = findViewById(R.id.tvTotal);
 
         // Configurar el Spinner
         String[] paymentMethods = {"Seleccione forma de pago", "Contado", "Crédito"};
@@ -46,7 +46,18 @@ public class MainActivity extends AppCompatActivity {
         // Ocultar opciones de crédito inicialmente
         rgCreditOptions.setVisibility(View.GONE);
 
-        // Mostrar opciones de crédito solo si se selecciona "Crédito"
+        // Listeners
+        etAmount.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                calculateTotal();
+            }
+            @Override
+            public void afterTextChanged(Editable s) {}
+        });
+
         spinnerPaymentMethod.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -56,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     rgCreditOptions.clearCheck();
                     rgCreditOptions.setVisibility(View.GONE);
                 }
+                calculateTotal();
             }
 
             @Override
@@ -64,18 +76,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnCalculate.setOnClickListener(new View.OnClickListener() {
+        rgCreditOptions.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onClick(View v) {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
                 calculateTotal();
             }
         });
+
+        cbHomeDelivery.setOnCheckedChangeListener((buttonView, isChecked) -> calculateTotal());
     }
 
     private void calculateTotal() {
         String amountStr = etAmount.getText().toString();
         if (amountStr.isEmpty()) {
-            Toast.makeText(this, "Please enter the amount", Toast.LENGTH_SHORT).show();
+            tvTotal.setText("Total: B/. 0.00");
             return;
         }
 
@@ -88,21 +102,14 @@ public class MainActivity extends AppCompatActivity {
         } else if (selectedPaymentMethod.equals("Crédito")) {
             if (rbOneYear.isChecked() || rbTwoYears.isChecked()) {
                 total = amount + (amount * 0.12); // 12% impuesto
-            } else {
-                Toast.makeText(this, "Please select a credit option", Toast.LENGTH_SHORT).show();
-                return;
             }
-        } else {
-            Toast.makeText(this, "Please select a payment method", Toast.LENGTH_SHORT).show();
-            return;
         }
 
         if (cbHomeDelivery.isChecked()) {
             total += 25.00; // Costo de entrega a domicilio
         }
 
-        Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-        intent.putExtra("total", total);
-        startActivity(intent);
+        tvTotal.setText(String.format("Total: B/. %.2f", total));
     }
 }
+
