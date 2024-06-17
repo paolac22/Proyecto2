@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LeyOhm"
+rootProject.name = "LeyOhm2"
 include(":app")
  
