@@ -10,44 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3826451b-ac78-4c5b-9d37-8d0ceb228154" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/androidTest/java/com/example/leyohm/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/java/com/example/leyohm/Corriente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/java/com/example/leyohm/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/java/com/example/leyohm/Resistencia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/java/com/example/leyohm/Voltaje.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/layout/activity_corriente.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/layout/activity_resistencia.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/layout/activity_voltaje.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/xml/backup_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/app/src/test/java/com/example/leyohm/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeyOhm2/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../LeyOhm2/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2hz32pAxWihl12OQjZSzE7xKAXx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -82,9 +45,9 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Paola",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/paoc2/AndroidStudioProjects/Proyecto/Proyecto2/calculator5"
+    "last_opened_file_path": "C:/Users/paoc2/AndroidStudioProjects/Proyecto/Proyecto2/LeyOhm2"
   }
 }]]></component>
   <component name="RunManager">
